@@ -1,3 +1,4 @@
+
 # Introducción a Bootstrap 5 · Ejercicios (2.º DAW)
 
 Esqueleto de trabajo para hacer los ejercicios **paso a paso en clase**.
@@ -26,3 +27,4 @@ Cada archivo trae comentarios `PASO N` que indican dónde escribir el código.
 - Guarda a menudo (Ctrl + S): Live Server recarga solo.
 - Usa las DevTools (F12) y el modo responsive (Ctrl + Shift + M).
 - Documentación: https://getbootstrap.com/docs/5.3 · Ejemplos: https://getbootstrap.com/docs/5.3/examples
+# Boostrasp
