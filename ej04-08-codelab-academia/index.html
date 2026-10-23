@@ -83,54 +83,157 @@
        <section id="cursos"> con 3 tarjetas: HTML y CSS · JavaScript · Bootstrap
        Imágenes de prueba: https://picsum.photos/seed/html/600/350 -->
 
-       <section id="cursos" class="py-5">
+       <section id="cursos" py-5>
           <div class="container">
                <h2 class="text-center mb-4"> Nuestros cursos</h2>
                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-                    <div class="col">
-                         <div class="card h-100 shadow-sm">
-                              <img class="card-img-top" src="https://picsum.photos/seed/html/600/350" alt="Imagen del curso de HTML y CSS">
-                              <div class="card-body">
-                                   <span class="badge text-bg-success">Inicial</span>
-                                   <h5 class="card-title mt-2">HTML y CSS</h5>
-                                   <p class="card-text">Aprende a crear páginas web con HTML y a darles estilo con CSS.</p>
-                                   <a href="#" class="btn btn-primary">Ver curso</a>
-                              </div>
-                         </div>
-                    </div>
+               <!-- cards con imagen, título, subtítulo y botón.-->
+                <div class="col">
 
-                    <div class="col">
-                         <div class="card h-100 shadow-sm">
-                              <img class="card-img-top" src="https://picsum.photos/seed/js/600/350" alt="Imagen del curso de JavaScript">
-                              <div class="card-body">
-                                   <span class="badge text-bg-warning">Intermedio</span>
-                                   <h5 class="card-title mt-2">JavaScript</h5>
-                                   <p class="card-text">Añade interactividad y lógica a tus webs con JavaScript moderno.</p>
-                                   <a href="#" class="btn btn-primary">Ver curso</a>
-                              </div>
-                         </div>
-                    </div>
+                
+                     <div class="card" h-100 shadow-sm>
+                         <img class="card-img-top" src=" https://picsum.photos/seed/html/600/350 " alt="Card image cap">
 
-                    <div class="col">
-                         <div class="card h-100 shadow-sm">
-                              <img class="card-img-top" src="https://picsum.photos/seed/bootstrap/600/350" alt="Imagen del curso de Bootstrap">
-                              <div class="card-body">
-                                   <span class="badge text-bg-primary">Intermedio</span>
-                                   <h5 class="card-title mt-2">Bootstrap</h5>
-                                   <p class="card-text">Diseña interfaces responsive de forma rápida con componentes listos.</p>
-                                   <a href="#" class="btn btn-primary">Ver curso</a>
-                              </div>
+               
+                    <div class="card" style="width: 18rem;">
+                         <img class="card-img-top" src="..." alt="">
+                         <div class="card-body">
+                              <span class="text-bg-success">Inicial</span>
+                         <h5 class="card-title">HTML y CSS</h5>
+                         <p class="card-text">Aprende a maquetar tu página web con buenas prácticas y diseño responsive.</p>
+                         <a href="#" class="btn btn-outline-primary">Más información</a>
+                         </div>
+                         <ul class="list-group list-group-flush">
+                         <li class="list-group-item">Cras justo odio</li>
+                         <li class="list-group-item">Dapibus ac facilisis in</li>
+                         <li class="list-group-item">Vestibulum at eros</li>
+                         </ul>
+                         <div class="card-body">
+                         <a href="#" class="card-link">Card link</a>
+                         <a href="#" class="card-link">Another link</a>
                          </div>
                     </div>
-               </div>
+                    
+                    <div class="card-body">
+                      
+                         <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+          </div>
+          
+</div>
+
+</section>
+
+   <section id="cursos" py-5>
+          <div class="container">
+               <h2 class="text-center mb-4"> Nuestros cursos</h2>
+               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+               <!-- cards con imagen, título, subtítulo y botón.-->
+                     <div class="card" h-100 shadow-sm>
+                         <img class="card-img-top" src=" https://picsum.photos/seed/html/600/350 " alt="Card image cap">
+
+               
+                    <div class="card" style="width: 18rem;">
+                         <img class="card-img-top" src="..." alt="">
+                         <div class="card-body">
+                              <span class="text-bg-success">Inicial</span>
+                         <h5 class="card-title">HTML y CSS</h5>
+                         <p class="card-text">Aprende a maquetar tu página web con buenas prácticas y diseño responsive.</p>
+                         <a href="#" class="btn btn-outline-primary">Más información</a>
+                         </div>
+                         <ul class="list-group list-group-flush">
+                         <li class="list-group-item">Cras justo odio</li>
+                         <li class="list-group-item">Dapibus ac facilisis in</li>
+                         <li class="list-group-item">Vestibulum at eros</li>
+                         </ul>
+                         <div class="card-body">
+                         <a href="#" class="card-link">Card link</a>
+                         <a href="#" class="card-link">Another link</a>
+                         </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      
+                         <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
            </div>
-       </section>
+   </div>
+
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="https://picsum.photos/seed/js/600/350" alt="JavaScript">
+          <div class="card-body">
+             <span class="text-bg-success">Intermedio</span>
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Añade interactividad y lógica a tus webs con JavaScript moderno.</p>
+            <a href="#" class="btn btn-outline-primary">Más información</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="https://picsum.photos/seed/bootstrap/600/350" alt="Bootstrap">
+          <div class="card-body">
+           <span class="text-bg-success">Inicial</span>
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">Diseña interfaces responsive de forma rápida con componentes listos.</p>
+            <a href="#" class="btn btn-outline-primary">Más información</a>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+
+
 
 
   <!-- ===== EJ. 6 · TABLA DE PRECIOS =====
        <section id="precios"> con 3 planes: Básico (0 €) · Pro destacado (19 €) · Premium (39 €) -->
+     <section ID="precios" class="py-5 bg-body-tertiary">
+          <div class="text-container">
+               <h2 class="text-center mb-4"> 
+                    Planes y precios.
 
+               </h2>
+               
+               <div class="row row-cols-1 row-cols-mid-3 g-4 text-center">
+
+               </div>
+               <class class="row">
+                    <!--CARD 1-->
+                    <div class="col">
+                         <div class="car h-100 shadow-sm rounded-3">
+                              <div class="car-header">
+                                   <h4>Básico</h4>
+                              </div>
+
+                              <div class="card-body">
+                                   <p>0€</p>
+                                   <ul>
+                                        <li>2 cursos de inicialización</li>
+                                        <li>Foro de dudas</li>
+                                        <li> Sin certificado </li>
+                                   </ul>
+                                   
+                                   <a href="#contacto" class="btn-lg btn-outline-primary">Empezar gratis</a>
+                              </div>
+                         </div>
+                    </div>
+
+
+                    <!--CARD 2-->
+
+
+
+                    <!--CARD 3-->
+
+               </class>
+               </div>
+          </div>
+     </section>
 
   <!-- ===== EJ. 7 · FORMULARIO DE CONTACTO =====
        <section id="contacto">: nombre, email, curso (select), mensaje, checkbox y botón Enviar -->
