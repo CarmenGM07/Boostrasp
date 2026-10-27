@@ -250,7 +250,28 @@
                                    <!--email-->
                                    <div class="col-md-6">
                                         <label for="email" class="from-label">Email</label> 
-                                        <input type="text" class="from-control" id="nombre" required>
+                                        <input type="email" class="from-control" id="email" placeholder="nombre@ejemplo.com" required>
+                                        <div class="invalid-feedback"> Escribe un email valido </div>
+                                   </div>
+
+                                   <!--curso-->
+                                   <div class="col-md-6">
+                                        <label for="curso" class="from-label">Curso de interes </label>
+                                        <select class="form-select" id="curso" required>
+                                             <option selected disabled value="">Selecciona...</option>
+                                             <option>HTML + CSS</option>
+                                             <option> JavaScript </option>
+                                             <option> Boostrap 5</option>
+                                             <option>Angular</option>
+                                        </select>
+
+                                        <div class="invalid-feedback"> Seleccione su Curso</div>
+                                   </div>
+
+                                   <!--Mensaje-->
+                                   <div class="col12">
+                                        <label for="mensaje" class="from-label">Mensaje</label> 
+                                         <textarea class="form-control" id="mensaje" rows="3"></textarea>
                                         <div class="invalid-feedback"> Escribe tu nombre</div>
                                    </div>
                               </from>
