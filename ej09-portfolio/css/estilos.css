@@ -15,3 +15,133 @@ html { scroll-behavior: smooth; }
 
 /* Que el título de cada sección no quede tapado por la navbar fija */
 section { scroll-margin-top: 70px; }
+
+
+.navbar {
+  background-color: #e6d9f5;
+}
+
+.navbar-brand{
+  margin-left: 1rem;
+}
+
+
+
+/*Este pequeño párrafo, es para convertir el header en un sistema flexible */
+
+header .container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*Después, este trozo de código, lo convertimos el contenedor del header en una cuadrícula (Grid) */
+header .container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+/* Este trozo de código, hace que la imagen quede a la izquierda con un tamaño definido y redonda */
+header .container > a:has(.foto){
+header .container > .d-block{
+   flex: 0 0 200px;
+   order: 1;
+}
+}
+
+/*Foto*/
+.foto{
+  width: 200px;
+  height: 200px;
+  object-fit:cover;
+  border-radius: 50%;/*Esto lo que hace es para que la foto sea redonda*/
+  display:block;
+}
+
+/* Esta foto, se queda en la columna 1, que abarca dos filas */
+header .container > a{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  justify-self: center;
+  margin-right: 1rem;
+}
+
+
+/* Para que la foto sea redonda y perfecta */
+.foto{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+
+/* A continuación, este código su función es agrupar el h1, el párrafo y los botones para que ocupen el espacio de la derecha */
+header .container > h1,
+header .container > p{
+  order: 2;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 0;
+}
+
+/*Y, por último, me aseguro que el h1 y el párrafo ocupen el acnvho de su columna derecha */
+header .container >h1,
+header .container >p{
+  width: 100%;
+}
+
+header .container > .d-grid{
+  order: 3;
+  width: 100%;
+}
+
+/* El nombre (h1) */
+header .container > h1{
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 0;
+}
+
+/* El párrafo va debajo del h1 */
+header .container > p{
+  grid-column: 2;
+  grid-row: 2;
+  margin-bottom: 0;
+}
+
+/*Los botones van abajo del todo */
+header .container > .d-grid{
+  grid-column: 1 /span 2;
+  margin-top: 1rem;
+  display: flex !important;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/*Para separa la imagen de la celda */
+header .container > a{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  justify-self: center; 
+}
+
+/*Ahora, voy a centrar los botones */
+header .container > .d-grid{
+  grid-column: 1 / span 2;
+  margin-top: 1.5rem;
+  display: flex !important;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+/*Tamaño de los botones */
+header .container > .d-grid .btn{
+  padding: 0.75rem 1.5rem;
+  font-size: 1 rem;
+}
