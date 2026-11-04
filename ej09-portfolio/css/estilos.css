@@ -145,3 +145,45 @@ header .container > .d-grid .btn{
   padding: 0.75rem 1.5rem;
   font-size: 1 rem;
 }
+
+/*Para centrar el nombre (h1) y el párrafo (p) */
+header .container > h1,
+header .container > p{
+  text-align: center;
+}
+
+
+/*Para centrar los bonotes */
+header .container > .d-grid{
+  grid-column:2;
+  grid-row:3;
+  flex-wrap: wrap;
+}
+
+/*Tabla de habilidades */
+.demo .row{
+  --bs-gutter-x: 3rem;
+}
+
+.demo .row > .col {
+  margin-bottom: 0.75rem;
+}
+
+.demo .row > div{
+  border: 1px solid var(--bs-border-color);
+}
+
+.demo .row > div{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/*Para pulsar a la etiqueta de habilidades */
+#habilidades{
+  scroll-margin-top: 70px;
+}
+
+/*Para centrar el título de habilidades*/
+.demo h1{
+  text-align: center;
+}
