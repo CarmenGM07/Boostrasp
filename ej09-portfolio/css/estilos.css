@@ -187,3 +187,9 @@ header .container > .d-grid{
 .demo h1{
   text-align: center;
 }
+
+/*Cuadrar  la imagen de Web Profesional */
+.card-img-top{
+  height: 250px;
+  object-fit: cover;
+}
