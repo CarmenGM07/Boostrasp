@@ -193,3 +193,8 @@ header .container > .d-grid{
   height: 250px;
   object-fit: cover;
 }
+
+/* En este apartado del css, es para que el título  no quede tapado por el navbar al pulsar Formación en el menú. */
+#formacion{
+  scroll-margin-top: 70px;
+}

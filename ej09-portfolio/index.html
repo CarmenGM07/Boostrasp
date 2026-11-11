@@ -62,7 +62,7 @@
           Foto o avatar (img/foto.jpg), nombre, titular profesional, 2-3 líneas sobre ti,
           botones "Ver proyectos" y "Descargar CV" (docs/cv.pdf con atributo download) -->
 
-          <header class="bg-body-tertiary">
+          <header class="bg-white">
                <div class="container py-5">
                     
                     <h1 class="display-5">Carmen Gandul Mojarro
@@ -207,28 +207,31 @@
           Idea: list-group o accordion -->
   
      
-              <div class="container demo py-4" id="habilidades">
-                    <h1 class="h3">Formación </h1>
+              <div class="container demo py-4" id="formacion">
+                    <h1 class="h3 text-center">Formación </h1>
                     
-                    
-                    <!-- PASO 1: tres columnas iguales (col) -->
-              
-               <div class="row">
-                    <div class="col"><a class="nav-link active" href="#nombre-de-mis-estudios"><i class="bi bi-house-door me-1"><strong>Nombre de mis estudios </strong></i></a></div>
-                    
-                    <div class="col"><a class="nav-link" href="#centro"><i class="bi bi-laptop me-1"><strong>Centro </strong></i></a></div>
-                    <div class="col"><a class="nav-link" href="#años"><i class="bi bi-database me-1"><strong> Años </strong></i></a></div>
-                    
-                   
-               </div>
+                     <ul class="list-group mt-3 mb-4">
+                         <li class="list-group-item"> Nombre de mi estudio: Desarrollo de aplicaciones web: DAW</li>
+                         <li class="list-group-item">Centro: MEDAC/Davante Sevilla Este</li>
+                         <li class="list-group-item"> Años: 1º año:2025-2026 y 2º año: 2026-2027 </li>
+                    </ul>
+          </div>
 
-               
-               <div class="row g-3">
-               <div class="col" id="nombre-de-mis-estudios">Desarrollo de aplicaciones web (DAW)</div>
-               <div class="col" id="centro">MEDAC/DAVANTE Sevilla Este</div>
-               <div class="col" id="años"> 1º año: 2025-2026 
-                    2º año: 2026-2027
-               </div>
+          <div class="container demo py-4" id="experiencia">
+                    <h1 class="h3 text-center">Experiencia </h1>
+                    
+                     <ul class="list-group mt-3 mb-4">
+                         <li class="list-group-item">
+                              <strong> Prácticas 1º año</strong><br>
+                              Empresa: Incrementa Marketing en Mairena del Alcor <br>
+                              Del 2 de febrero al 6 de marzo de 2026
+                         </li>
+
+                         <li class="list-group-item"><strong>Prácticas 2º año (previstas)</strong><br>
+                         Empresa: Incrementa Marketing en Mairena del Alcor <br>
+                         Del 8 de marzo al 4 de junio de 2027
+                         </li>
+                    </ul>
           </div>
 
  </div>
@@ -238,6 +241,68 @@
      <!-- ===== CONTACTO (id="contacto") =====
           Formulario con validación (nombre, email, asunto, mensaje)
           + enlaces a email, LinkedIn y GitHub -->
+         
+          <section id="contacto" class="py-5">
+               <div class ="container">
+                    <div class="row justify-content-center">
+                         <div class="col">
+                              <h2 class="mb-2">Pide información</h2>
+                              <from class="row g-3">
+                                   <!--Escribe tu nombre-->
+                                   <div class="col-md-6">
+                                        <label for="nombre" class="from-label">Nombre</label> 
+                                        <input type="text" class="from-control" id="nombre" required>
+                                        <div class="invalid-feedback"> Escribe tu nombre</div>
+                                   </div>
+
+                                   <!--email-->
+                                   <div class="col-md-6">
+                                        <label for="email" class="from-label">Email</label> 
+                                        <input type="email" class="from-control" id="email" placeholder="nombre@ejemplo.com" required>
+                                        <div class="invalid-feedback"> Escribe un email valido </div>
+                                   </div>
+
+                                     <!--curso-->
+                                   <div class="col-md-6">
+                                        <label for="curso" class="from-label">Curso de interes </label>
+                                        <select class="form-select" id="curso" required>
+                                             <option selected disabled value="">Selecciona...</option>
+                                             <option>HTML + CSS</option>
+                                             <option> JavaScript </option>
+                                             <option> Boostrap 5</option>
+                                             <option>Angular</option>
+                                        </select>
+
+                                        <div class="invalid-feedback"> Seleccione su Curso</div>
+                                   </div>
+                                     <!--Mensaje-->
+                                   <div class="col12">
+                                        <label for="mensaje" class="from-label">Mensaje</label> 
+                                         <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                                        <div class="invalid-feedback"> Escribe tu nombre</div>
+                                   </div>
+
+                              <!--checkbox-->
+                              <div class="col-12">
+                         <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                              Acepto los términos y condiciones
+                              </label>
+                              <div class="invalid-feedback">
+                             Debes ACEPTAR antes de continuar.
+                              </div>
+                              <!--Botón de enviado-->
+                         </div>
+                         </div>
+                         <div class="col-12">
+                         <button class="btn btn-primary btn-lg" type="submit" style="background-color:#c9b0ea; border-color:#ffffff; color:#212529">Enviar</button>
+                         </div>
+                 </from>
+          </div>
+     </div>
+</div>
+          </section>
 
      </main>
 
