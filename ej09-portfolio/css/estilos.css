@@ -198,3 +198,18 @@ header .container > .d-grid{
 #formacion{
   scroll-margin-top: 70px;
 }
+
+/* Para cambiar el color del botón de Ver Proyectos en color morado */
+header .container .btn-primary,
+header .container a[href="#proyectos"]{
+  background-color: #c9b0ea;
+  border-color: #c9b0ea;
+  color: #212529;
+}
+
+/* Este apartado, es el efecto al pasar el ratón */
+header .container a[href="#proyectos"]:hover{
+  background-color: #b89ce2;
+  border-color: #b89ce2;
+  color: #212529;
+}
