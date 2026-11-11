@@ -213,3 +213,44 @@ header .container a[href="#proyectos"]:hover{
   border-color: #b89ce2;
   color: #212529;
 }
+
+/*En este apartado, al pasar el ratón por el botón de descargar CV, se va a cambiar al color morado */
+header .container a[href="docs/cv.pdf"]:hover{
+  background-color: #c9b0ea;
+  border-color: #c9b0ea;
+  color: #212529;
+}
+
+/* Y en este apartado, hago lo mismo con el botón de curriculum */
+header .container a[href="docs/curriculum.pdf"]:hover{
+  background-color: #c9b0ea;
+  border-color: #c9b0ea;
+  color: #212529;
+}
+
+/*Aquí se va a poner los bordes de la lista de Formación */
+#formacion .list-group-item{
+  border-color: #9b72cf;
+}
+
+/*Aquí se va a ponr los bordes de la lista de experiencia */
+#experiencia .list-group-item{
+  border-color: #9b72cf;
+}
+
+/*Aquí voy a poner los bordes de los campos del formulario de contacto en morado */
+#contacto .form-control,
+#contacto .form-select,
+#contacto .form-check-input{
+  border-color: #9b72cf;
+}
+
+/*Para poner el color de fondo del pie de página */
+.navbar, footer{
+  background-color: #e6d9f5 !important;
+}
+
+/*Voy a separar el footer un poco de lo de arriba sin romper el fondo */
+footer{
+  margin-top: 3rem;
+}
