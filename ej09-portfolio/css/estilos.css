@@ -134,7 +134,7 @@ header .container > a{
 header .container > .d-grid{
   grid-column: 1 / span 2;
   margin-top: 1.5rem;
-  display: flex !important;
+  display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 0.5rem;
