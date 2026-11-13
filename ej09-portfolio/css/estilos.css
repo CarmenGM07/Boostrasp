@@ -254,3 +254,14 @@ header .container a[href="docs/curriculum.pdf"]:hover{
 footer{
   margin-top: 3rem;
 }
+
+/*Poner el color morado para el acordeón de Formación */
+#Formacion{
+  --bs-accordion-border-color: #9b72cf;
+  --bs-accordion-btn-bg: #e6d9f5;
+  --bs-accordion-btn-color:#212529;
+  --bs-accordion-active-bg: #c9b0ea;
+  --bs-accordion-active-color: #212529;
+  --bs-accordion-btb-focus-box-shadow: 0 0 0 0.25rem rgba(155,114,207,0.25);
+
+}
