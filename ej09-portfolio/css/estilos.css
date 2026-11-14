@@ -246,22 +246,49 @@ header .container a[href="docs/curriculum.pdf"]:hover{
 }
 
 /*Para poner el color de fondo del pie de página */
-.navbar, footer{
-  background-color: #e6d9f5 !important;
+.navbar,
+footer {
+  background-color: #b89ce2;
+}
+footer p a{
+  color: #212529;
+  text-decoration: none;
 }
 
-/*Voy a separar el footer un poco de lo de arriba sin romper el fondo */
-footer{
-  margin-top: 3rem;
+footer p a:hover{
+  color: #000000;
+  text-decoration: underline;
 }
 
-/*Poner el color morado para el acordeón de Formación */
-#Formacion{
+
+/*Poner el color morado claro en los acordeones de formación y experiencia */
+.accordion{
   --bs-accordion-border-color: #9b72cf;
   --bs-accordion-btn-bg: #e6d9f5;
-  --bs-accordion-btn-color:#212529;
+  --bs-accordion-btn-color: #212529;
   --bs-accordion-active-bg: #c9b0ea;
   --bs-accordion-active-color: #212529;
-  --bs-accordion-btb-focus-box-shadow: 0 0 0 0.25rem rgba(155,114,207,0.25);
+  --bs-accordion-btn-focus-border-color: #9b72cf;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(155,114,207,0.25);
+}
 
+/* Para poner los acordeones más estrechos y centrados */
+.accordion{
+  max-width: 1200px;
+  margin-left:auto;
+  margin-right: auto;
+
+}
+
+/*Para poner el segundo card de Proyecto de color morado */
+#proyectos .col:nth-child(2) .card{
+  background-color: #c9b0ea;
+  border-color: #9b72cf;
+}
+
+/* Para poner la etiqueta "Proyectos" de los tres cards de color morado oscuro*/
+#proyectos .card-body > .badge:first-child{
+  background-color: #9b72cf;
+  color:#ffffff;
+  border: 1px solid #7b4fb8;
 }
