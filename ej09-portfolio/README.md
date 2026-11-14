@@ -16,3 +16,4 @@ js/main.js
 img/    ← foto y capturas de proyectos
 docs/   ← cv.pdf
 ```
+He utilizado la IA para hacer varias funciones y también, para algunos apartado del css, porque no sabía porque me daba error y lo que me faltaba. He utilizado la herramienta Claude y Gemini
