@@ -130,6 +130,10 @@ header .container > a{
   justify-self: center; 
 }
 
+/*Para desplazar la imagen un poco a la derecha */
+header .container > a{
+  margin-left:  500rem;
+}
 /*Ahora, voy a centrar los botones */
 header .container > .d-grid{
   grid-column: 1 / span 2;
