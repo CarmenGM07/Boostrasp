@@ -292,3 +292,9 @@ footer p a:hover{
   color:#ffffff;
   border: 1px solid #7b4fb8;
 }
+
+/* Es para poner el color morado claro en la fila de los títulos de la tabla */
+.demo .row:not(.g-3) > div{
+  background-color: #c9b0ea;
+}
+

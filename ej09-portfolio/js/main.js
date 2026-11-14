@@ -12,3 +12,9 @@ document.querySelectorAll('.needs-validation').forEach(form => {
     form.classList.add('was-validated');
   });
 });
+
+
+const formulario = document.querySelector('#contacto form');
+  formulario.setAttribute('novalidate', '');
+  formulario.action ='https://formsubmit.co/carmengandul@icloud.com';
+  formulario.method = 'POST';
